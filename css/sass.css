@@ -411,6 +411,62 @@ header .mobile-menu .menu-item:hover {
   text-align: start;
 }
 
+.section-slider .slider .swiper-container .swiper-wrapper .swiper-slide .layer .swiper-content::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 22%;
+  right: 0;
+  bottom: 0;
+  left: 2%;
+  width: 38%;
+  height: 58%;
+  border-top: 4px solid;
+  border-right: 4px solid;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  -o-border-image: linear-gradient(to right, transparent 55%, var(--first-color) 55%, var(--second-color) 100%) 30;
+     border-image: -webkit-gradient(linear, left top, right top, color-stop(55%, transparent), color-stop(55%, var(--first-color)), to(var(--second-color))) 30;
+     border-image: linear-gradient(to right, transparent 55%, var(--first-color) 55%, var(--second-color) 100%) 30;
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+          transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  opacity: 1;
+}
+
+.section-slider .slider .swiper-container .swiper-wrapper .swiper-slide .layer .swiper-content::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 22%;
+  right: 0;
+  bottom: 0;
+  left: 2%;
+  width: 38%;
+  height: 58%;
+  border-left: 4px solid;
+  border-bottom: 4px solid;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  -o-border-image: linear-gradient(to bottom, transparent 83%, var(--first-color) 83%, var(--second-color) 100%) 30;
+     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(83%, transparent), color-stop(83%, var(--first-color)), to(var(--second-color))) 30;
+     border-image: linear-gradient(to bottom, transparent 83%, var(--first-color) 83%, var(--second-color) 100%) 30;
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+          transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  opacity: 1;
+}
+
 .section-slider .slider .swiper-container .swiper-wrapper .swiper-slide .layer .swiper-content .hood {
   margin-top: 0;
   margin-bottom: 1.5rem;
