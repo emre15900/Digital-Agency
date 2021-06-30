@@ -39,9 +39,9 @@
         color: linear-gradient(45deg, var(--first-color) 15%, var(--second-color)  65%);
     }
 }
-.fa-twitter{
+.fa-linkedin{
     color: var(--smoke-color);
-    font-size: 22px;
+    font-size: 23px;
     opacity: 0.8;
     &:hover{
         color: linear-gradient(45deg, var(--first-color) 15%, var(--second-color)  65%);
@@ -171,6 +171,27 @@ header{
                             }
                         }
                     }
+                    .social-section{
+                        position: fixed;
+                        bottom: 0;
+                        display: flex;
+                        width: 90%;
+                        ul{
+                            display: flex;
+                            justify-content: space-between;
+                            list-style: none;
+                            width: 90%;
+                            .mobile-social{
+                                a{
+                                    color: var(--smoke-color);
+                                    text-decoration: none;
+                                    &:hover{
+                                        color: var(--first-color);
+                                    }
+                                }
+                            }
+                        }
+                    }
                     .menu__box {
                         visibility: visible;
                         left: 0;
@@ -193,14 +214,14 @@ header{
                 position: absolute;
                 width: 100%;
                 height: 2px;
-                background-color: #616161;
+                background-color: var(--second-color);
                 transition-duration: .25s;
                 &::before {
                     display: block;
                     position: absolute;
                     width: 100%;
                     height: 2px;
-                    background-color: #616161;
+                    background-color: var(--first-color);
                     transition-duration: .25s;
                     content: '';
                     top: -8px;
@@ -210,7 +231,7 @@ header{
                     position: absolute;
                     width: 100%;
                     height: 2px;
-                    background-color: #616161;
+                    background-color: var(--second-color);
                     transition-duration: .25s;
                     content: '';
                     top: 8px;
@@ -228,19 +249,46 @@ header{
             margin: 0;
             padding: 80px 0;
             list-style: none;
-            background-color: #ffffff;
+            background-color: var(--black-color);
             box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
             transition-duration: .25s;
+            .contact-us-mobile{
+                color: var(--smoke-color);
+                outline: 0;
+                text-decoration: none;
+                font-size: 1rem;
+                font-weight: 600;
+                margin: 20px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
             .logo{
                 position: absolute;
                 top: 24px;
                 left: 20px;
+                a{
+                    color: var(--smoke-color);
+                    text-decoration: none;
+                    padding: 0;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    line-height: 0;
+                    .version{
+                        margin: 0 0 0 5px;
+                        font-size: 12px;
+                    }
+                }
             }
+        }
+        .social-section{
+           display: none;
         }
         .menu-item {
             display: block;
             padding: 12px 24px;
-            color: #333;
+            color: var(--smoke-color);
             font-family: 'Roboto', sans-serif;
             font-size: 20px;
             font-weight: 600;
@@ -248,7 +296,7 @@ header{
             transition-duration: .25s;
             border-bottom: 1px solid #ddd;
             &:hover {
-                background-color: #EA5607;
+                background-image: linear-gradient(45deg, var(--first-color) 15%, var(--second-color)  65%);
                 color: #fff;
             }
         }
@@ -412,6 +460,74 @@ header{
                     background-image: linear-gradient(45deg, #e0040b 15%, #fc5130 65%) ;
                     opacity: 1;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .section-slider{
+        .swiper-content{
+            &::after{
+                display: none;
+            }
+            &::before{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .section-slider{
+        .slider-img{
+            img{
+                opacity: .5;
+            }
+        }
+        .layer{
+            width: 120%;
+            .hood {
+                font-size: 4rem !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 572px){
+    .section-slider{
+        .slider-img{
+            img{
+                right: 23% !important;
+                height: 70% !important;
+                top: 124px !important;
+                opacity: .5;
+            }
+        }
+        .layer{
+            width: 130%;
+            .swiper-content{
+                position: absolute;
+                top: 278px;
+            }
+            .hood {
+                font-size: 4rem !important;
+                .sl-shadow-br{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 468px){
+    .section-slider{
+        .slider-img{
+            img{
+                opacity: .5;
+            }
+        }
+        .layer{
+            width: 130%;
+            .hood {
+                font-size: 3rem !important;
             }
         }
     }
