@@ -328,6 +328,9 @@ header{
 
 /* ===== SLIDER ===== */
 .section-slider{
+    .swiper-container-pointer-events {
+        background: var(--black-color);
+    }
     .get-started{
         display: flex;
         justify-content: space-between;
@@ -349,6 +352,7 @@ header{
             height: 100%;
             .swiper-wrapper {
                 padding: 0 120px;
+                background: var(--black-color);
                 .swiper-slide {
                     text-align: center;
                     font-size: 18px;

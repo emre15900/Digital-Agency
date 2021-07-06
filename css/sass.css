@@ -403,6 +403,10 @@ header .mobile-menu .menu-item:hover {
 }
 
 /* ===== SLIDER ===== */
+.section-slider .swiper-container-pointer-events {
+  background: var(--black-color);
+}
+
 .section-slider .get-started {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -437,6 +441,7 @@ header .mobile-menu .menu-item:hover {
 
 .section-slider .slider .swiper-container .swiper-wrapper {
   padding: 0 120px;
+  background: var(--black-color);
 }
 
 .section-slider .slider .swiper-container .swiper-wrapper .swiper-slide {
